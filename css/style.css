@@ -1,0 +1,45 @@
+.debug [class*='col-'] {
+  background: red;
+}
+
+/* [class*='col-'] {
+  background: red;
+} */
+
+
+/* Possiamo intervenire solo su un elemento in un nostro  id */
+#buttons .btn-default{
+  border: 1px solid red;
+}
+/* Oppure creare una classe aggiuntiva */
+/* .btn.my_btn-border-red{
+  border: 1px solid red;
+}
+
+/*
+  nostre regole base
+  per distinguerle da quelle di bootstrap inseriamo un nostro prefisso,
+  ms_
+*/
+.ms_bg-lightgrey {
+  background-color: lightgrey;
+}
+
+.ms_bg-red{
+  background: red;
+}
+
+.ms_button {
+  border-radius: 40px;
+  background: red;
+}
+.ms_button:hover,
+.ms_button:active,
+.ms_button:focus {
+  background: grey;
+}
+
+.ms_thumbnail,
+.ms_thumbnail-image {
+  border-radius: 30px;
+}

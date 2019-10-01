@@ -1,15 +1,113 @@
 <!DOCTYPE html>
 <html lang="" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <title>Recap Bootstrap</title>
-  </head>
-  <body>
 
-    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-  </body>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Recap Bootstrap</title>
+</head>
+
+<body class="debug">
+  <h2>Container</h2>
+  <div class="container ms_bg-red">
+    <!-- testiamo i bottoni -->
+    <!-- buttons -->
+    <!-- <div id="buttons">
+      <a class="btn btn-default" href="#" role="button">Link</a>
+      <button class="btn btn-primary" type="submit">Button</button>
+      <input class="btn btn-success" type="button" value="Input">
+      <input class="btn btn-warning" type="submit" value="Submit">
+    </div> -->
+    <!-- /buttons -->
+    <!--
+    <div id="info">
+      <a class="btn btn-default my_btn-border-red" href="#" role="button">Link</a>
+    </div> -->
+
+    <!-- testiamo push e pull -->
+    <!--
+      <div class="row">
+        <div class="col-md-9 col-md-push-3">Pippo</div>
+        <div class="col-md-3 col-md-pull-9">Pluto</div>
+        <div class="col-xs-6 col-md-4">sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="col-xs-6 col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div class="col-md-4 visible-lg">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div> -->
+
+    <!-- Testiamo il componente thumbnail e cambiamone l'aspetto -->
+    <h3>Thumbnail</h3>
+    <!-- thumbnail component -->
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ms_bg-lightgrey">
+          <img src="https://www.lifegate.it/app/uploads/gatto-interno2-e1481812668842.jpg" alt="Gatto">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><a href="#" class="btn ms_button ms_button-orange" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <!-- aggiungiamo un border-radius -->
+        <div class="thumbnail ms_thumbnail">
+          <img class="ms_thumbnail-image" src="https://www.lifegate.it/app/uploads/gatto-interno2-e1481812668842.jpg" alt="Gatto">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail ms_bg-lightgrey">
+          <img src="https://www.lifegate.it/app/uploads/gatto-interno2-e1481812668842.jpg" alt="Gatto">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /thumbnail component -->
+
+  </div>
+  <!-- /container -->
+
+  <h2>Container fluid</h2>
+  <!-- container-fluid -->
+  <div class="container-fluid ms_bg-red">
+    <h3>Nesting di row e colonne</h3>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="container">
+          <h4>Container in container-fluid</h4>
+          <h5>Ricordiamoci che cos&igrave; stiamo prendendo il padding di container</h5>
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="row">
+                <div class="col-xs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <div class="col-xs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+              </div>
+            </div>
+            <div class="col-xs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="col-xs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /container-fluid -->
+
+</body>
+
 </html>
